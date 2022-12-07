@@ -7,4 +7,9 @@ import (
 
 func Render(path string) string {
 	// TODO
+	if path != "" {
+		return "# " + hello.World(path)
+	}
+
+	return "# Welcome"
 }
